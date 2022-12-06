@@ -1,3 +1,7 @@
+-- Bouni's nvim config, 2022 edition
+--
+-- mostly stolen from Josean Martinez -> https://github.com/josean-dev/dev-environment-files
+--
 require("plugins-setup")
 require("core.options")
 require("core.keymaps")
