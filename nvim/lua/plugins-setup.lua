@@ -43,6 +43,8 @@ return packer.startup(function(use)
 	-- packer can manage itself
 	use("wbthomason/packer.nvim")
 
+	use("linty-org/key-menu.nvim")
+
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
 	use("olimorris/onedarkpro.nvim") -- preferred colorscheme
@@ -53,6 +55,10 @@ return packer.startup(function(use)
 
 	-- essential plugins
 	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
+	-- "Hello World" -> cs"' -> 'Hello World'
+	-- "Hello World" -> ds" -> Hello World
+	-- Hello World -> ysiw[ -> [ Hello ] World
+	-- Hello World -> ysiw] -> [Hello] World
 	use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
 
 	-- commenting with gc
