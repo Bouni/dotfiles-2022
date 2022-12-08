@@ -2,8 +2,6 @@ vim.g.mapleader = " " -- set leader key to space
 
 local keymap = vim.keymap -- for conciseness
 
-vim.o.timeoutlen = 300
-
 require("key-menu").set("n", "<Space>")
 require("key-menu").set("n", "g")
 
