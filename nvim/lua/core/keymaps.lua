@@ -32,8 +32,11 @@ keymap.set("n", "<leader>tp", ":tabp<CR>", { desc = "previous tab" })
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { desc = "toggle NvimTree" })
 
+keymap.set("n", "<leader>f", function()
+	vim.lsp.buf.format({ async = true })
+end)
+
 -- telescope
-require("key-menu").set("n", "<leader>f", { desc = "Telescope" })
 keymap.set(
 	"n",
 	"<leader>ff",
